@@ -1,5 +1,12 @@
-export default function category(){
+interface CategoryProps {
+    params: {
+        category: string
+    }
+}
+
+export default function Category(props: CategoryProps){
+    const { category } = props.params
     return(
-        <h1>categoria dinamica</h1>
+        <h1>categoria dinamica: {category}</h1>
     )
 }
