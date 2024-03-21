@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}
+      <body className={inter.className}>
         <header>
           <nav>
             <ul>
@@ -30,6 +30,7 @@ export default function RootLayout({
             </ul>
           </nav>
         </header>
+        {children}
       </body>
     </html>
   );
