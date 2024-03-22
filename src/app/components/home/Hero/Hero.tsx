@@ -1,4 +1,5 @@
-import styles from './Hero.module.css'
+import styles from './Hero.module.sass'
+
 export const Hero = () => {
     return (
         <section className={styles.Hero}>
