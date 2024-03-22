@@ -1,3 +1,4 @@
+'use client'
 import { Inter } from "next/font/google";
 import { Header } from "./components/shared/Header";
 import { Footer } from "./components/shared/Footer";
@@ -14,14 +15,11 @@ export default function RootLayout({
   
   return (
     <html lang="en">
-    
-    <body className={inter.className}>
-    <Header />
+      <body className={inter.className}>
+        <Header />
         {children}
         <Footer />
-      </body>
-    
-      
+      </body>  
     </html>
   );
 }
